@@ -1,2 +1,1 @@
-# LocalFirstExample
-Local-First Template Repo
+# Local-First Template Repo

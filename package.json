@@ -1,0 +1,37 @@
+{
+  "name": "metarhia",
+  "version": "0.0.0",
+  "author": "Timur Shemsedinov <timur.shemsedinov@gmail.com>",
+  "description": "Local-First Application Example",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/metatech-university/LocalFirstExample"
+  },
+  "bugs": {
+    "url": "https://github.com/metatech-university/LocalFirstExample/issues"
+  },
+  "homepage": "https://github.com/metatech-university/LocalFirstExample",
+  "main": "server.js",
+  "types": "types/global.d.ts",
+  "scripts": {
+    "test": "npm run lint && npm run types",
+    "types": "tsc -p tsconfig.json",
+    "lint": "eslint . && prettier -c \"**/*.js\" \"**/*.json\" \"**/*.md\"",
+    "fix": "eslint . --fix && prettier --write \"**/*.js\" \"**/*.json\" \"**/*.md\""
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "@types/ws": "^8.18.1",
+    "eslint": "^9.39.1",
+    "eslint-config-metarhia": "^9.1.5",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "impress": "^3.1.2"
+  }
+}
